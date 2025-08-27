@@ -56,7 +56,7 @@
       </div>
     </header>
     <section
-      class="hero min-w-screen bg-[linear-gradient(90deg,rgba(1.25,49.64,34.61,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] flex justify-center items-center text-white flex-col hind-madurai px-14 py-3 gap-6 mb-12"
+      class="hero min-w-screen bg-[linear-gradient(90deg,rgba(1.25,49.64,34.61,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] flex justify-center items-center text-white flex-col hind-madurai px-14 py-3 gap-6"
     >
       <img src="./assets/logo-dark.png" class="w-[92px] h-[92px]" alt="" />
       <h1 class="md:text-4xl text-[20px] font-bold">
@@ -67,60 +67,336 @@
         Government of the People’s Republic of Bangladesh
       </p>
     </section>
-    <main>
+    <main class="bg-[#f5fff6] pt-12">
       <section
-        class="cards-container border-2 border-emerald-900 p-10 w-11/12 mx-auto grid grid-cols-12"
+        class="cards-container p-10 w-11/12 mx-auto grid grid-cols-12 gap-8"
       >
         <section class="numbers-cards-section col-span-9">
-          <div
-            class="card bg-base-100 w-[436px] h-[360px] shadow-[0px_2px_3px_0px_#00000026] p-8 rounded-xl"
-          >
-            <div class="card-top flex justify-between items-center mb-4">
-              <div
-                class="badge rounded-[16px] bg-[#ffe3e2] p-2 w-[60px] h-[60px]"
-              >
-                <img
-                  src="./assets/emergency.png"
-                  class="w-[32px] h-[32px] rounded-[16px]"
-                  alt=""
-                />
+          <div class="grid grid-cols-3 gap-8">
+            <div
+              class="shadow-[0px_2px_3px_0px_#00000026] p-8 rounded-xl bg-white"
+            >
+              <div class="card-top flex justify-between items-center mb-4">
+                <div
+                  class="badge rounded-[16px] bg-[#ffe3e2] p-2 w-[60px] h-[60px]"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    class="w-[32px] h-[32px] rounded-[16px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart w-[24px] h-[24px] text-gray-600 heartButton"
+                ></i>
               </div>
-              <i
-                class="fa-regular fa-heart w-[24px] h-[24px] text-gray-600"
-              ></i>
-            </div>
-            <div class="mb-6">
-              <h2 class="text-2xl text-[#111111] hind-madurai font-bold">
-                National Emergency Number
-              </h2>
-              <h2 class="text-2xl text-[#5c5c5c] roboto text-[18px]">
-                National Emergency
-              </h2>
-            </div>
-            <div class="mb-6">
-              <p class="text-3xl text-black font-bold">999</p>
-              <div
-                class="bg-[#f2f2f2] px-4 py-[6px] rounded-full text-[18px] w-fit"
-              >
-                All
+              <div class="mb-3">
+                <h2
+                  class="text-2xl text-[#111111] hind-madurai font-bold numberName"
+                >
+                  National Emergency Number
+                </h2>
+                <h2 class="text-2xl text-[#5c5c5c] roboto text-[18px]">
+                  National Emergency
+                </h2>
+              </div>
+              <div class="mb-6">
+                <p class="text-3xl text-black font-bold mb-3 phoneNumber">
+                  999
+                </p>
+                <div
+                  class="bg-[#f2f2f2] px-4 py-[6px] rounded-full text-[18px] w-fit"
+                >
+                  All
+                </div>
+              </div>
+              <div class="flex justify-center flex-row gap-2">
+                <button
+                  class="btn w-1/2 p-3 border-[1px] border-[#d4d6d5] box-border bg-white rounded-md roboto text-[#5c5c5c] copyNumber"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn w-1/2 p-3 border-[1px] bg-[#00a63e] border-[#d4d6d5] box-border text-white rounded-md roboto callNumber"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
               </div>
             </div>
-            <div class="flex justify-center flex-row gap-2">
-              <button
-                class="btn w-1/2 p-3 border-[1px] border-[#d4d6d5] box-border bg-white rounded-md roboto text-[#5c5c5c]"
-              >
-                <i class="fa-regular fa-copy"></i> Copy
-              </button>
-              <button
-                class="btn w-1/2 p-3 border-[1px] bg-[#00a63e] border-[#d4d6d5] box-border text-white rounded-md roboto"
-              >
-                <i class="fa-solid fa-phone"></i> Call
-              </button>
+            <div
+              class="shadow-[0px_2px_3px_0px_#00000026] p-8 rounded-xl bg-white"
+            >
+              <div class="card-top flex justify-between items-center mb-4">
+                <div
+                  class="badge rounded-[16px] bg-[#ffe3e2] p-2 w-[60px] h-[60px]"
+                >
+                  <img
+                    src="./assets/police.png"
+                    class="w-[32px] h-[32px] rounded-[16px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart w-[24px] h-[24px] text-gray-600 heartButton"
+                ></i>
+              </div>
+              <div class="mb-3">
+                <h2
+                  class="text-2xl text-[#111111] hind-madurai font-bold numberName"
+                >
+                  Police Helpline Number
+                </h2>
+                <h2 class="text-2xl text-[#5c5c5c] roboto text-[18px]">
+                  Police
+                </h2>
+              </div>
+              <div class="mb-6">
+                <p class="text-3xl text-black font-bold mb-3 phoneNumber">
+                  999
+                </p>
+                <div
+                  class="bg-[#f2f2f2] px-4 py-[6px] rounded-full text-[18px] w-fit"
+                >
+                  Police
+                </div>
+              </div>
+              <div class="flex justify-center flex-row gap-2">
+                <button
+                  class="btn w-1/2 p-3 border-[1px] border-[#d4d6d5] box-border bg-white rounded-md roboto text-[#5c5c5c] copyNumber"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn w-1/2 p-3 border-[1px] bg-[#00a63e] border-[#d4d6d5] box-border text-white rounded-md roboto callNumber"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div
+              class="shadow-[0px_2px_3px_0px_#00000026] p-8 rounded-xl bg-white"
+            >
+              <div class="card-top flex justify-between items-center mb-4">
+                <div
+                  class="badge rounded-[16px] bg-[#ffe3e2] p-2 w-[60px] h-[60px]"
+                >
+                  <img
+                    src="./assets/fire-service.png"
+                    class="w-[32px] h-[32px] rounded-[16px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart w-[24px] h-[24px] text-gray-600 heartButton"
+                ></i>
+              </div>
+              <div class="mb-3">
+                <h2
+                  class="text-2xl text-[#111111] hind-madurai font-bold numberName"
+                >
+                  Fire Service Number
+                </h2>
+                <h2 class="text-2xl text-[#5c5c5c] roboto text-[18px]">
+                  Fire Service
+                </h2>
+              </div>
+              <div class="mb-6">
+                <p class="text-3xl text-black font-bold mb-3 phoneNumber">
+                  999
+                </p>
+                <div
+                  class="bg-[#f2f2f2] px-4 py-[6px] rounded-full text-[18px] w-fit"
+                >
+                  Fire
+                </div>
+              </div>
+              <div class="flex justify-center flex-row gap-2">
+                <button
+                  class="btn w-1/2 p-3 border-[1px] border-[#d4d6d5] box-border bg-white rounded-md roboto text-[#5c5c5c] copyNumber"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn w-1/2 p-3 border-[1px] bg-[#00a63e] border-[#d4d6d5] box-border text-white rounded-md roboto callNumber"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div
+              class="shadow-[0px_2px_3px_0px_#00000026] p-8 rounded-xl bg-white"
+            >
+              <div class="card-top flex justify-between items-center mb-4">
+                <div
+                  class="badge rounded-[16px] bg-[#ffe3e2] p-2 w-[60px] h-[60px]"
+                >
+                  <img
+                    src="./assets/ambulance.png"
+                    class="w-[32px] h-[32px] rounded-[16px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart w-[24px] h-[24px] text-gray-600 heartButton"
+                ></i>
+              </div>
+              <div class="mb-3">
+                <h2
+                  class="text-2xl text-[#111111] hind-madurai font-bold numberName"
+                >
+                  Ambulance Service
+                </h2>
+                <h2 class="text-2xl text-[#5c5c5c] roboto text-[18px]">
+                  Ambulance
+                </h2>
+              </div>
+              <div class="mb-6">
+                <p class="text-3xl text-black font-bold mb-3 phoneNumber">
+                  1994-999999
+                </p>
+                <div
+                  class="bg-[#f2f2f2] px-4 py-[6px] rounded-full text-[18px] w-fit"
+                >
+                  Health
+                </div>
+              </div>
+              <div class="flex justify-center flex-row gap-2">
+                <button
+                  class="btn w-1/2 p-3 border-[1px] border-[#d4d6d5] box-border bg-white rounded-md roboto text-[#5c5c5c] copyNumber"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn w-1/2 p-3 border-[1px] bg-[#00a63e] border-[#d4d6d5] box-border text-white rounded-md roboto callNumber"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div
+              class="shadow-[0px_2px_3px_0px_#00000026] p-8 rounded-xl bg-white"
+            >
+              <div class="card-top flex justify-between items-center mb-4">
+                <div
+                  class="badge rounded-[16px] bg-[#ffe3e2] p-2 w-[60px] h-[60px]"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    class="w-[32px] h-[32px] rounded-[16px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart w-[24px] h-[24px] text-gray-600 heartButton"
+                ></i>
+              </div>
+              <div class="mb-3">
+                <h2
+                  class="text-2xl text-[#111111] hind-madurai font-bold numberName"
+                >
+                  Women & Child Helpline
+                </h2>
+                <h2 class="text-2xl text-[#5c5c5c] roboto text-[18px]">
+                  Women & Child Helpline
+                </h2>
+              </div>
+              <div class="mb-6">
+                <p class="text-3xl text-black font-bold mb-3 phoneNumber">
+                  109
+                </p>
+                <div
+                  class="bg-[#f2f2f2] px-4 py-[6px] rounded-full text-[18px] w-fit"
+                >
+                  Help
+                </div>
+              </div>
+              <div class="flex justify-center flex-row gap-2">
+                <button
+                  class="btn w-1/2 p-3 border-[1px] border-[#d4d6d5] box-border bg-white rounded-md roboto text-[#5c5c5c] copyNumber"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn w-1/2 p-3 border-[1px] bg-[#00a63e] border-[#d4d6d5] box-border text-white rounded-md roboto callNumber"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
+            </div>
+            <div
+              class="shadow-[0px_2px_3px_0px_#00000026] p-8 rounded-xl bg-white"
+            >
+              <div class="card-top flex justify-between items-center mb-4">
+                <div
+                  class="badge rounded-[16px] bg-[#ffe3e2] p-2 w-[60px] h-[60px]"
+                >
+                  <img
+                    src="./assets/emergency.png"
+                    class="w-[32px] h-[32px] rounded-[16px]"
+                    alt=""
+                  />
+                </div>
+                <i
+                  class="fa-regular fa-heart w-[24px] h-[24px] text-gray-600 heartButton"
+                ></i>
+              </div>
+              <div class="mb-3">
+                <h2
+                  class="text-2xl text-[#111111] hind-madurai font-bold numberName"
+                >
+                  Anti-Corruption Helpline
+                </h2>
+                <h2 class="text-2xl text-[#5c5c5c] roboto text-[18px]">
+                  Anti-Corruption
+                </h2>
+              </div>
+              <div class="mb-6">
+                <p class="text-3xl text-black font-bold mb-3 phoneNumber">
+                  106
+                </p>
+                <div
+                  class="bg-[#f2f2f2] px-4 py-[6px] rounded-full text-[18px] w-fit"
+                >
+                  Govt.
+                </div>
+              </div>
+              <div class="flex justify-center flex-row gap-2">
+                <button
+                  class="btn w-1/2 p-3 border-[1px] border-[#d4d6d5] box-border bg-white rounded-md roboto text-[#5c5c5c] copyNumber"
+                >
+                  <i class="fa-regular fa-copy"></i> Copy
+                </button>
+                <button
+                  class="btn w-1/2 p-3 border-[1px] bg-[#00a63e] border-[#d4d6d5] box-border text-white rounded-md roboto callNumber"
+                >
+                  <i class="fa-solid fa-phone"></i> Call
+                </button>
+              </div>
             </div>
           </div>
         </section>
-        <aside class="call-history col-span-3"><h1>history</h1></aside>
+        <aside
+          class="call-history col-span-3 p-5 bg-[#ffffff] shadow-[0px_2px_3px_0px_rgba(0,0,0,0.15)] rounded-xl"
+        >
+          <div class="flex justify-between items-center mb-3">
+            <div class="flex flex-row items-center justify-center gap-1">
+              <i class="fa-regular fa-clock h-[24px] w-[24px]"></i>
+              <h1 class="text-[20px] roboto font-medium mb-2">Call History</h1>
+            </div>
+
+            <div>
+              <button
+                id="clearHistory"
+                class="p-3 bg-[#00a63e] box-border text-white roboto rounded-[50px] py-4 px-9 inter font-semibold"
+              >
+                Clear
+              </button>
+            </div>
+          </div>
+          <div id="historyCards"></div>
+        </aside>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
