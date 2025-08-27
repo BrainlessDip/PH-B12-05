@@ -12,10 +12,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+    />
 
     <title>Emergency Service Directory</title>
   </head>
@@ -52,7 +56,7 @@
       </div>
     </header>
     <section
-      class="hero min-w-screen bg-[linear-gradient(90deg,rgba(1.25,49.64,34.61,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] flex justify-center items-center text-white flex-col hind-madurai px-14 py-3 gap-6"
+      class="hero min-w-screen bg-[linear-gradient(90deg,rgba(1.25,49.64,34.61,1),rgba(0,103,71,1)_50%,rgba(1,50,35,1)_100%)] flex justify-center items-center text-white flex-col hind-madurai px-14 py-3 gap-6 mb-12"
     >
       <img src="./assets/logo-dark.png" class="w-[92px] h-[92px]" alt="" />
       <h1 class="md:text-4xl text-[20px] font-bold">
@@ -63,5 +67,60 @@
         Government of the People’s Republic of Bangladesh
       </p>
     </section>
+    <main>
+      <section
+        class="cards-container border-2 border-emerald-900 p-10 w-11/12 mx-auto grid grid-cols-12"
+      >
+        <section class="numbers-cards-section col-span-9">
+          <div
+            class="card bg-base-100 w-[436px] h-[360px] shadow-[0px_2px_3px_0px_#00000026] p-8 rounded-xl"
+          >
+            <div class="card-top flex justify-between items-center mb-4">
+              <div
+                class="badge rounded-[16px] bg-[#ffe3e2] p-2 w-[60px] h-[60px]"
+              >
+                <img
+                  src="./assets/emergency.png"
+                  class="w-[32px] h-[32px] rounded-[16px]"
+                  alt=""
+                />
+              </div>
+              <i
+                class="fa-regular fa-heart w-[24px] h-[24px] text-gray-600"
+              ></i>
+            </div>
+            <div class="mb-6">
+              <h2 class="text-2xl text-[#111111] hind-madurai font-bold">
+                National Emergency Number
+              </h2>
+              <h2 class="text-2xl text-[#5c5c5c] roboto text-[18px]">
+                National Emergency
+              </h2>
+            </div>
+            <div class="mb-6">
+              <p class="text-3xl text-black font-bold">999</p>
+              <div
+                class="bg-[#f2f2f2] px-4 py-[6px] rounded-full text-[18px] w-fit"
+              >
+                All
+              </div>
+            </div>
+            <div class="flex justify-center flex-row gap-2">
+              <button
+                class="btn w-1/2 p-3 border-[1px] border-[#d4d6d5] box-border bg-white rounded-md roboto text-[#5c5c5c]"
+              >
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+              <button
+                class="btn w-1/2 p-3 border-[1px] bg-[#00a63e] border-[#d4d6d5] box-border text-white rounded-md roboto"
+              >
+                <i class="fa-solid fa-phone"></i> Call
+              </button>
+            </div>
+          </div>
+        </section>
+        <aside class="call-history col-span-3"><h1>history</h1></aside>
+      </section>
+    </main>
   </body>
 </html>
