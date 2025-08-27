@@ -42,17 +42,17 @@ document.getElementById("clearHistory").addEventListener("click", function () {
 
 function appendToHistory(name, number, time) {
   historyElement = document.getElementById("historyCards");
-  newHistory = document.createElement(`div`);
-  newHistory.innerHTML = `          <div
-              class="historyCard bg-[#fafafa] rounded-lg p-4 flex justify-between items-center mb-2"
-            >
+  const newHistory = document.createElement("div");
+  newHistory.className =
+    "historyCard bg-[#fafafa] rounded-lg p-4 m-2 mb-4 flex justify-between items-center";
+
+  newHistory.innerHTML = `
               <div class="flex flex-col">
                 <h1 class="inter font-semibold text-[18px]">
                 ${name}
                 </h1>
                 <h2 class="hind-madurai text-[18px] text-[#5c5c5c]">${number}</h2>
               </div>
-              <h1 class="hind-madurai text-[18px]">${time}</h1>
-            </div>`;
+              <h1 class="hind-madurai text-[18px]">${time}</h1>`;
   historyElement.appendChild(newHistory);
 }
